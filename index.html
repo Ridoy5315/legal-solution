@@ -18,7 +18,16 @@
       .font-eb-garamond {
         font-family: "EB Garamond", serif;
       }
+      #ami{
+          background-image: linear-gradient(0deg, #111111, #11111117), url("./images/banner.png");
+          background-position:center;
+          background-size: cover;
+          background-repeat: no-repeat;
+         
+      }
     </style>
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/1e1b92107c.js" crossorigin="anonymous"></script>
     <!-- Tailwind and DaisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -33,6 +42,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              'primary-color': "#707070",
+              'btn-primary': "#B68C5A",
             },
           },
         },
@@ -40,6 +51,70 @@
     </script>
   </head>
   <body class="font-poppins">
-    
+    <!-- header section -->
+     <header class="lg:container mx-auto mt-7">
+          <!-- navigation -->
+          <nav>
+               <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-primary-color">
+                          <li><a>Home</a></li>
+                         <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                         <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                         <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                         <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                      </div>
+                      <a href=""><img src="./images/logo2.png" alt=""></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-primary-color">
+                         <li><a>Home</a></li>
+                         <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                         <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                         <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                         <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end ">
+                      <a class="text-white font-semibold text-lg bg-btn-primary px-7 py-4 rounded-lg">Free Consultation</a>
+                    </div>
+                  </div>
+          </nav>
+          <!-- banner section -->
+          <div id="ami" class=" mt-10 rounded-lg px-56 py-24 text-center space-y-7 w-full">
+               <h2 class="text-white text-7xl font-eb-garamond font-extrabold">We Provide Effective Legal Solutions</h2>
+               <p class="text-[#E7E7E7]">Our Service provides expert legal advice and representation, specializing in personalized solutions for complex legal challenges. Our aim to deliver high-quality, client-focused support to ensure favorable outcomes in various legal matters.</p>
+               <div class="flex gap-4">
+                    <input class="flex-1 px-5 py-3 rounded-lg" type="text" placeholder="Search your services">
+                    <button class="text-white font-semibold text-lg bg-btn-primary px-7 py-3 rounded-lg">Search</button>
+               </div>
+          </div>
+     </header>
+     <!-- main section -->
+      <main>
+
+      </main>
+      <!-- footer section -->
+       <footer>
+
+       </footer>
   </body>
 </html>
