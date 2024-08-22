@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +20,13 @@
       }
       #ami {
         background-image: linear-gradient(0deg, #111111, #11111117),
+          url("./images/banner.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .tomi {
+        background-image: linear-gradient(0deg, #111111, #111111c0),
           url("./images/banner.png");
         background-position: center;
         background-size: cover;
@@ -156,7 +163,9 @@
       <!-- practice area section -->
       <section class="lg:container mx-auto mt-28">
         <div class="text-center max-w-2xl mx-auto space-y-4">
-          <h3 class="font-eb-garamond text-4xl font-extrabold text-[#414040]">The Legal Practice Area</h3>
+          <h3 class="font-eb-garamond text-4xl font-extrabold text-[#414040]">
+            The Legal Practice Area
+          </h3>
           <p class="text-primary-color">
             Law practice areas refer to the specialized fields within the legal
             profession, such as criminal law, family law, corporate law, and
@@ -166,101 +175,309 @@
         <!-- cards -->
         <div class="grid grid-cols-3 mt-16">
           <!-- card 1 -->
-          <div class="card ">
+          <div class="card">
             <figure class="px-10 pt-10">
-              <img
-                src="./images/business.png"
-                alt="business law"
-              />
+              <img src="./images/business.png" alt="business law" />
             </figure>
             <div class="card-body items-center text-center space-y-3">
-              <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Business Law</h2>
-              <p class="text-primary-color">Business law encompasses the rules, regulations, and legal practices that govern the formation, operation, and dissolution of businesses, ensuring compliance and resolving disputes.</p>
+              <h2
+                class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]"
+              >
+                Business Law
+              </h2>
+              <p class="text-primary-color">
+                Business law encompasses the rules, regulations, and legal
+                practices that govern the formation, operation, and dissolution
+                of businesses, ensuring compliance and resolving disputes.
+              </p>
               <div class="card-actions">
-                <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
+                <button
+                  class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
           <!-- card 2 -->
-          <div class="card bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] rounded-none border border-[#E7E7E7]">
-               <figure class="px-10 pt-10">
-                 <img
-                   src="./images/criminal.png"
-                   alt="criminal law"
-                 />
-               </figure>
-               <div class="card-body items-center text-center space-y-3">
-                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Criminal Law</h2>
-                 <p class="text-primary-color">Criminal law governs offenses against the state, focusing on prosecuting and defending individuals accused of crimes such as theft, assault, and murder.</p>
-                 <div class="card-actions">
-                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
-                 </div>
-               </div>
-             </div>
-             <!-- card 3 -->
+          <div
+            class="card bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] rounded-none border border-[#E7E7E7]"
+          >
+            <figure class="px-10 pt-10">
+              <img src="./images/criminal.png" alt="criminal law" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2
+                class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]"
+              >
+                Criminal Law
+              </h2>
+              <p class="text-primary-color">
+                Criminal law governs offenses against the state, focusing on
+                prosecuting and defending individuals accused of crimes such as
+                theft, assault, and murder.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
           <div class="card">
-               <figure class="px-10 pt-10">
-                 <img
-                   src="./images/child.png"
-                   alt="chile law"
-                 />
-               </figure>
-               <div class="card-body items-center text-center space-y-3">
-                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Child Support</h2>
-                 <p class="text-primary-color">Child support law governs the financial responsibilities of non-custodial parents to contribute to the upbringing and welfare of their children.</p>
-                 <div class="card-actions">
-                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
-                 </div>
-               </div>
-             </div>
-             <!-- card 4 -->
+            <figure class="px-10 pt-10">
+              <img src="./images/child.png" alt="chile law" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2
+                class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]"
+              >
+                Child Support
+              </h2>
+              <p class="text-primary-color">
+                Child support law governs the financial responsibilities of
+                non-custodial parents to contribute to the upbringing and
+                welfare of their children.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
           <div class="card border-t border-[#E7E7E7] rounded-none">
-               <figure class="px-10 pt-10">
-                 <img
-                   src="./images/education.png"
-                   alt="education law"
-                 />
-               </figure>
-               <div class="card-body items-center text-center space-y-3">
-                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Education Law</h2>
-                 <p class="text-primary-color">Education law governs the policies and regulations that affect schools, teachers, and students, ensuring fair and equitable access to education. It addresses issues such as student rights, school safety, and special education.</p>
-                 <div class="card-actions">
-                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
-                 </div>
-               </div>
-             </div>
-             <!-- card 5 -->
+            <figure class="px-10 pt-10">
+              <img src="./images/education.png" alt="education law" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2
+                class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]"
+              >
+                Education Law
+              </h2>
+              <p class="text-primary-color">
+                Education law governs the policies and regulations that affect
+                schools, teachers, and students, ensuring fair and equitable
+                access to education. It addresses issues such as student rights,
+                school safety, and special education.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
           <div class="card border-x border-[#E7E7E7] rounded-none">
-               <figure class="px-10 pt-10">
-                 <img
-                   src="./images/divorce.png"
-                   alt="divorce law"
-                 />
-               </figure>
-               <div class="card-body items-center text-center space-y-3">
-                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Divorce Law</h2>
-                 <p class="text-primary-color">Divorce law governs the legal process of dissolving a marriage, addressing issues such as asset division, child custody, and spousal support. It aims to ensure a fair resolution.</p>
-                 <div class="card-actions">
-                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
-                 </div>
-               </div>
-             </div>
-             <!-- card 6 -->
+            <figure class="px-10 pt-10">
+              <img src="./images/divorce.png" alt="divorce law" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2
+                class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]"
+              >
+                Divorce Law
+              </h2>
+              <p class="text-primary-color">
+                Divorce law governs the legal process of dissolving a marriage,
+                addressing issues such as asset division, child custody, and
+                spousal support. It aims to ensure a fair resolution.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
           <div class="card border-t border-[#E7E7E7] rounded-none">
-               <figure class="px-10 pt-10">
-                 <img
-                   src="./images/tax.png"
-                   alt="tax law"
-                 />
-               </figure>
-               <div class="card-body items-center text-center space-y-3">
-                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Tax Law</h2>
-                 <p class="text-primary-color">Tax law governs the legal aspects of taxation, including the rules and regulations that individuals, businesses, and organizations must follow to comply with federal, state, and local tax obligations.</p>
-                 <div class="card-actions">
-                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
-                 </div>
-               </div>
-             </div>
+            <figure class="px-10 pt-10">
+              <img src="./images/tax.png" alt="tax law" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2
+                class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]"
+              >
+                Tax Law
+              </h2>
+              <p class="text-primary-color">
+                Tax law governs the legal aspects of taxation, including the
+                rules and regulations that individuals, businesses, and
+                organizations must follow to comply with federal, state, and
+                local tax obligations.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- client section -->
+      <section class="lg:container mx-auto mt-28">
+        <div class="text-center max-w-2xl mx-auto space-y-4">
+          <h3 class="font-eb-garamond text-4xl font-extrabold text-[#414040]">
+            What Our Client Say
+          </h3>
+          <p class="text-primary-color">
+            Highly professional and attentive, our legal team consistently
+            delivers exceptional results. Clients appreciate our thorough
+            approach and commitment to their success.
+          </p>
+        </div>
+        <!-- slide -->
+        <div class="carousel w-full">
+          <!-- slide 1 -->
+          <div
+            id="slide1"
+            class="tomi rounded-lg carousel-item relative w-full"
+          >
+            <div class="px-40 py-24 text-center">
+              <div class="avatar">
+                <div class="w-24 border border-4 rounded-full">
+                  <img src="./images/client1.png" class="w-full" />
+                </div>
+              </div>
+              <h4
+                class="font-eb-garamond text-2xl font-extrabold text-white mt-7 mb-2"
+              >
+                Awlad Hossain
+              </h4>
+              <p class="text-white">UIX Designer</p>
+              <p class="text-[#F3F3F3] mt-10 mb-10">
+                Outstanding legal service! The team was incredibly knowledgeable
+                and handled my case with utmost professionalism. Highly
+                recommend them. I was impressed by the level of detail and care
+                taken in my case. The attorneys were always available and
+                provided clear, honest advice.
+              </p>
+              <div class="grid grid-cols-3 w-40 mx-auto">
+                <div class="w-12 bg-[#707070] h-1"></div>
+                <div class="w-12 bg-white h-1"></div>
+                <div class="w-12 bg-[#707070] h-1"></div>
+              </div>
+            </div>
+            <div
+              class="absolute left-9 right-9 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide4" class="text-white">❮</a>
+              <a href="#slide2" class="text-white">❯</a>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div
+            id="slide2"
+            class="tomi rounded-lg carousel-item relative w-full"
+          >
+            <div class="px-40 py-24 text-center">
+              <div class="avatar">
+                <div class="w-24 border border-4 rounded-full">
+                  <img src="./images/client2.png" class="w-full" />
+                </div>
+              </div>
+              <h4
+                class="font-eb-garamond text-2xl font-extrabold text-white mt-7 mb-2"
+              >
+                Tony Daes
+              </h4>
+              <p class="text-white">Businessman</p>
+              <p class="text-[#F3F3F3] mt-10 mb-10">
+                Exceptional service from start to finish. They made the legal process smooth and stress-free. I felt supported every step of
+                the way. The team’s dedication to my case was evident from our first meeting. Their expertise and commitment resulted in a
+                favorable outcome.
+              </p>
+              <div class="grid grid-cols-3 w-40 mx-auto">
+                <div class="w-12 bg-[#707070] h-1"></div>
+                <div class="w-12 bg-white h-1"></div>
+                <div class="w-12 bg-[#707070] h-1"></div>
+              </div>
+            </div>
+            <div
+              class="absolute left-9 right-9 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide1" class="text-white">❮</a>
+              <a href="#slide3" class="text-white">❯</a>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div
+            id="slide3"
+            class="tomi rounded-lg carousel-item relative w-full"
+          >
+            <div class="px-40 py-24 text-center">
+              <div class="avatar">
+                <div class="w-24 border border-4 rounded-full">
+                  <img src="./images/client3.png" class="w-full" />
+                </div>
+              </div>
+              <h4
+                class="font-eb-garamond text-2xl font-extrabold text-white mt-7 mb-2"
+              >
+                Charles Inno
+              </h4>
+              <p class="text-white">Software Engineer</p>
+              <p class="text-[#F3F3F3] mt-10 mb-10">
+                Fantastic experience with this law firm. They took the time to understand my situation and provided effective solutions. Truly grateful for their help. Professional, reliable, and results-driven. The legal team went above and beyond to ensure my case was handled effectively.
+              </p>
+              <div class="grid grid-cols-3 w-40 mx-auto">
+                <div class="w-12 bg-[#707070] h-1"></div>
+                <div class="w-12 bg-white h-1"></div>
+                <div class="w-12 bg-[#707070] h-1"></div>
+              </div>
+            </div>
+            <div
+              class="absolute left-9 right-9 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide2" class="text-white">❮</a>
+              <a href="#slide4" class="text-white">❯</a>
+            </div>
+          </div>
+          <!-- slide 4 -->
+          <div id="slide4" class="tomi rounded-lg carousel-item relative w-full">
+            <div class="px-40 py-24 text-center">
+              <div class="avatar">
+                <div class="w-24 border border-4 rounded-full">
+                  <img src="./images/client3.png" class="w-full" />
+                </div>
+              </div>
+              <h4
+                class="font-eb-garamond text-2xl font-extrabold text-white mt-7 mb-2">
+                Harry Flex
+              </h4>
+              <p class="text-white">Politician</p>
+              <p class="text-[#F3F3F3] mt-10 mb-10">
+                I couldn’t have asked for better representation. The attorneys were not only skilled but also empathetic and understanding throughout the process. From the initial consultation to the final resolution, the service was top-notch. They provided clear communication and delivered excellent results.
+              </p>
+              <div class="grid grid-cols-3 w-40 mx-auto">
+                <div class="w-12 bg-[#707070] h-1"></div>
+                <div class="w-12 bg-white h-1"></div>
+                <div class="w-12 bg-[#707070] h-1"></div>
+              </div>
+            </div>
+            <div
+              class="absolute left-9 right-9 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide3" class="text-white">❮</a>
+              <a href="#slide1" class="text-white">❯</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
