@@ -18,16 +18,19 @@
       .font-eb-garamond {
         font-family: "EB Garamond", serif;
       }
-      #ami{
-          background-image: linear-gradient(0deg, #111111, #11111117), url("./images/banner.png");
-          background-position:center;
-          background-size: cover;
-          background-repeat: no-repeat;
-         
+      #ami {
+        background-image: linear-gradient(0deg, #111111, #11111117),
+          url("./images/banner.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     </style>
     <!-- fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/1e1b92107c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1e1b92107c.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Tailwind and DaisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -42,8 +45,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              'primary-color': "#707070",
-              'btn-primary': "#B68C5A",
+              "primary-color": "#707070",
+              "btn-primary": "#B68C5A",
             },
           },
         },
@@ -52,69 +55,216 @@
   </head>
   <body class="font-poppins">
     <!-- header section -->
-     <header class="lg:container mx-auto mt-7">
-          <!-- navigation -->
-          <nav>
-               <div class="navbar bg-base-100">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
-                        </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-primary-color">
-                          <li><a>Home</a></li>
-                         <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
-                         <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
-                         <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
-                         <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
-                        </ul>
-                      </div>
-                      <a href=""><img src="./images/logo2.png" alt=""></a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1 text-primary-color">
-                         <li><a>Home</a></li>
-                         <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
-                         <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
-                         <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
-                         <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end ">
-                      <a class="text-white font-semibold text-lg bg-btn-primary px-7 py-4 rounded-lg">Free Consultation</a>
-                    </div>
-                  </div>
-          </nav>
-          <!-- banner section -->
-          <div id="ami" class=" mt-10 rounded-lg px-56 py-24 text-center space-y-7 w-full">
-               <h2 class="text-white text-7xl font-eb-garamond font-extrabold">We Provide Effective Legal Solutions</h2>
-               <p class="text-[#E7E7E7]">Our Service provides expert legal advice and representation, specializing in personalized solutions for complex legal challenges. Our aim to deliver high-quality, client-focused support to ensure favorable outcomes in various legal matters.</p>
-               <div class="flex gap-4">
-                    <input class="flex-1 px-5 py-3 rounded-lg" type="text" placeholder="Search your services">
-                    <button class="text-white font-semibold text-lg bg-btn-primary px-7 py-3 rounded-lg">Search</button>
-               </div>
+    <header class="lg:container mx-auto mt-7">
+      <!-- navigation -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-primary-color"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Services<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Cases<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Blog<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li>
+                  <a>Contact Us<i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+            <a href=""><img src="./images/logo2.png" alt="" /></a>
           </div>
-     </header>
-     <!-- main section -->
-      <main>
-
-      </main>
-      <!-- footer section -->
-       <footer>
-
-       </footer>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-primary-color">
+              <li><a>Home</a></li>
+              <li>
+                <a>Services<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Cases<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Blog<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Contact Us<i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="text-white font-semibold text-lg bg-btn-primary px-7 py-4 rounded-lg"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <div
+        id="ami"
+        class="mt-10 rounded-lg px-56 py-24 text-center space-y-7 w-full"
+      >
+        <h2 class="text-white text-7xl font-eb-garamond font-extrabold">
+          We Provide Effective Legal Solutions
+        </h2>
+        <p class="text-[#E7E7E7]">
+          Our Service provides expert legal advice and representation,
+          specializing in personalized solutions for complex legal challenges.
+          Our aim to deliver high-quality, client-focused support to ensure
+          favorable outcomes in various legal matters.
+        </p>
+        <div class="flex gap-4">
+          <input
+            class="flex-1 px-5 py-3 rounded-lg"
+            type="text"
+            placeholder="Search your services"
+          />
+          <button
+            class="text-white font-semibold text-lg bg-btn-primary px-7 py-3 rounded-lg"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main>
+      <!-- practice area section -->
+      <section class="lg:container mx-auto mt-28">
+        <div class="text-center max-w-2xl mx-auto space-y-4">
+          <h3 class="font-eb-garamond text-4xl font-extrabold text-[#414040]">The Legal Practice Area</h3>
+          <p class="text-primary-color">
+            Law practice areas refer to the specialized fields within the legal
+            profession, such as criminal law, family law, corporate law, and
+            intellectual property law.
+          </p>
+        </div>
+        <!-- cards -->
+        <div class="grid grid-cols-3 mt-16">
+          <!-- card 1 -->
+          <div class="card ">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/business.png"
+                alt="business law"
+              />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Business Law</h2>
+              <p class="text-primary-color">Business law encompasses the rules, regulations, and legal practices that govern the formation, operation, and dissolution of businesses, ensuring compliance and resolving disputes.</p>
+              <div class="card-actions">
+                <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] rounded-none border border-[#E7E7E7]">
+               <figure class="px-10 pt-10">
+                 <img
+                   src="./images/criminal.png"
+                   alt="criminal law"
+                 />
+               </figure>
+               <div class="card-body items-center text-center space-y-3">
+                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Criminal Law</h2>
+                 <p class="text-primary-color">Criminal law governs offenses against the state, focusing on prosecuting and defending individuals accused of crimes such as theft, assault, and murder.</p>
+                 <div class="card-actions">
+                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+               </div>
+             </div>
+             <!-- card 3 -->
+          <div class="card">
+               <figure class="px-10 pt-10">
+                 <img
+                   src="./images/child.png"
+                   alt="chile law"
+                 />
+               </figure>
+               <div class="card-body items-center text-center space-y-3">
+                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Child Support</h2>
+                 <p class="text-primary-color">Child support law governs the financial responsibilities of non-custodial parents to contribute to the upbringing and welfare of their children.</p>
+                 <div class="card-actions">
+                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+               </div>
+             </div>
+             <!-- card 4 -->
+          <div class="card border-t border-[#E7E7E7] rounded-none">
+               <figure class="px-10 pt-10">
+                 <img
+                   src="./images/education.png"
+                   alt="education law"
+                 />
+               </figure>
+               <div class="card-body items-center text-center space-y-3">
+                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Education Law</h2>
+                 <p class="text-primary-color">Education law governs the policies and regulations that affect schools, teachers, and students, ensuring fair and equitable access to education. It addresses issues such as student rights, school safety, and special education.</p>
+                 <div class="card-actions">
+                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+               </div>
+             </div>
+             <!-- card 5 -->
+          <div class="card border-x border-[#E7E7E7] rounded-none">
+               <figure class="px-10 pt-10">
+                 <img
+                   src="./images/divorce.png"
+                   alt="divorce law"
+                 />
+               </figure>
+               <div class="card-body items-center text-center space-y-3">
+                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Divorce Law</h2>
+                 <p class="text-primary-color">Divorce law governs the legal process of dissolving a marriage, addressing issues such as asset division, child custody, and spousal support. It aims to ensure a fair resolution.</p>
+                 <div class="card-actions">
+                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+               </div>
+             </div>
+             <!-- card 6 -->
+          <div class="card border-t border-[#E7E7E7] rounded-none">
+               <figure class="px-10 pt-10">
+                 <img
+                   src="./images/tax.png"
+                   alt="tax law"
+                 />
+               </figure>
+               <div class="card-body items-center text-center space-y-3">
+                 <h2 class="card-title font-eb-garamond font-extrabold text-3xl text-[#414040]">Tax Law</h2>
+                 <p class="text-primary-color">Tax law governs the legal aspects of taxation, including the rules and regulations that individuals, businesses, and organizations must follow to comply with federal, state, and local tax obligations.</p>
+                 <div class="card-actions">
+                   <button class="text-white bg-btn-primary rounded-full py-0.5 px-1.5"><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+               </div>
+             </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer></footer>
   </body>
 </html>
