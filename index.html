@@ -55,6 +55,11 @@
               "primary-color": "#707070",
               "btn-primary": "#B68C5A",
             },
+            backgroundImage: {
+              "hero-pattern": "url('/img/hero-pattern.svg')",
+              "footer-texture": "url('/img/footer-texture.png')",
+              "back-photo": "url('/images/banner.png')",
+            },
           },
         },
       };
@@ -62,7 +67,7 @@
   </head>
   <body class="font-poppins">
     <!-- header section -->
-    <header class="lg:container mx-auto mt-7">
+    <header class="lg:container mx-auto mt-7 max-w-sm">
       <!-- navigation -->
       <nav>
         <div class="navbar bg-base-100">
@@ -124,44 +129,53 @@
           </div>
           <div class="navbar-end">
             <a
-              class="text-white font-semibold text-lg bg-btn-primary px-7 py-4 rounded-lg"
+              class="text-white font-semibold lg:text-lg bg-btn-primary lg:px-7 px-3 lg:py-4 py-2 rounded-lg"
               >Free Consultation</a
             >
           </div>
         </div>
       </nav>
-      <!-- banner section -->
+      <!-- banner section lg:px-56 p-6 lg:py-24 object-cover-->
       <div
-        id="ami"
-        class="mt-10 rounded-lg px-56 py-24 text-center space-y-7 w-full"
+        class="bg-gradient-to-b from-[#111111b4] to-[#111111] relative lg:mt-10 mt-5 rounded-lg text-center w-full"
       >
-        <h2 class="text-white text-7xl font-eb-garamond font-extrabold">
-          We Provide Effective Legal Solutions
-        </h2>
-        <p class="text-[#E7E7E7]">
-          Our Service provides expert legal advice and representation,
-          specializing in personalized solutions for complex legal challenges.
-          Our aim to deliver high-quality, client-focused support to ensure
-          favorable outcomes in various legal matters.
-        </p>
-        <div class="flex gap-4">
-          <input
-            class="flex-1 px-5 py-3 rounded-lg"
-            type="text"
-            placeholder="Search your services"
-          />
-          <button
-            class="text-white font-semibold text-lg bg-btn-primary px-7 py-3 rounded-lg"
+        <img
+          class="absolute w-full h-full mix-blend-overlay"
+          src="./images/banner.png"
+          alt=""
+        />
+        <div class="lg:px-56 p-6 lg:py-32 space-y-7">
+          <h2
+            class="text-white lg:text-7xl text-5xl font-eb-garamond font-extrabold"
           >
-            Search
-          </button>
+            We Provide Effective <br />
+            Legal Solutions
+          </h2>
+          <p class="text-[#E7E7E7]">
+            Our Service provides expert legal advice and representation,
+            specializing in personalized solutions for complex legal challenges.
+            Our aim to deliver high-quality, client-focused support to ensure
+            favorable outcomes in various legal matters.
+          </p>
+          <div class="flex gap-4">
+            <input
+              class="flex-1 px-5 py-3 rounded-lg"
+              type="text"
+              placeholder="Search your services"
+            />
+            <button
+              class="text-white font-semibold text-lg bg-btn-primary z-10 px-7 py-3 rounded-lg"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <!-- main section -->
     <main>
       <!-- practice area section -->
-      <section class="lg:container mx-auto mt-28">
+      <section class="lg:container mx-auto lg:mt-28 mt-16 max-w-sm">
         <div class="text-center max-w-2xl mx-auto space-y-4">
           <h3 class="font-eb-garamond text-4xl font-extrabold text-[#414040]">
             The Legal Practice Area
@@ -173,9 +187,9 @@
           </p>
         </div>
         <!-- cards -->
-        <div class="grid grid-cols-3 mt-16">
+        <div class="grid lg:grid-cols-3 grid-cols-1 lg:mt-16 mt-6">
           <!-- card 1 -->
-          <div class="card">
+          <div class="card lg:bg-none  bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] rounded-none">
             <figure class="px-10 pt-10">
               <img src="./images/business.png" alt="business law" />
             </figure>
@@ -201,7 +215,7 @@
           </div>
           <!-- card 2 -->
           <div
-            class="card bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] rounded-none border border-[#E7E7E7]"
+            class="card bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] rounded-none lg:border lg:border-[#E7E7E7]"
           >
             <figure class="px-10 pt-10">
               <img src="./images/criminal.png" alt="criminal law" />
@@ -227,7 +241,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="card">
+          <div class="card lg:bg-none bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] rounded-none">
             <figure class="px-10 pt-10">
               <img src="./images/child.png" alt="chile law" />
             </figure>
@@ -252,7 +266,7 @@
             </div>
           </div>
           <!-- card 4 -->
-          <div class="card border-t border-[#E7E7E7] rounded-none">
+          <div class="card lg:border-t lg:border-[#E7E7E7] rounded-none lg:bg-none bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300]">
             <figure class="px-10 pt-10">
               <img src="./images/education.png" alt="education law" />
             </figure>
@@ -278,7 +292,7 @@
             </div>
           </div>
           <!-- card 5 -->
-          <div class="card border-x border-[#E7E7E7] rounded-none">
+          <div class="card lg:bg-none bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] lg:border-x lg:border-[#E7E7E7] rounded-none">
             <figure class="px-10 pt-10">
               <img src="./images/divorce.png" alt="divorce law" />
             </figure>
@@ -303,7 +317,7 @@
             </div>
           </div>
           <!-- card 6 -->
-          <div class="card border-t border-[#E7E7E7] rounded-none">
+          <div class="card lg:bg-none bg-gradient-to-b from-[#F3F3F3] to-[#f3f3f300] lg:border-t lg:border-[#E7E7E7] rounded-none">
             <figure class="px-10 pt-10">
               <img src="./images/tax.png" alt="tax law" />
             </figure>
@@ -331,7 +345,7 @@
         </div>
       </section>
       <!-- client section -->
-      <section class="lg:container mx-auto mt-28">
+      <section class="lg:container mx-auto lg:mt-28 mt-16 max-w-sm">
         <div class="text-center max-w-2xl mx-auto space-y-4">
           <h3 class="font-eb-garamond text-4xl font-extrabold text-[#414040]">
             What Our Client Say
@@ -343,13 +357,19 @@
           </p>
         </div>
         <!-- slide -->
-        <div class="carousel w-full">
+
+        <div class="carousel w-full mt-6 h-[550px]">
           <!-- slide 1 -->
           <div
             id="slide1"
-            class="tomi rounded-lg carousel-item relative w-full"
+            class="rounded-lg carousel-item w-full bg-gradient-to-b from-[#111111b4] to-[#111111] relative lg:h-full h-[550px]"
           >
-            <div class="px-40 py-24 text-center">
+            <img
+              class="absolute w-full h-full mix-blend-overlay"
+              src="./images/banner.png"
+              alt=""
+            />
+            <div class="lg:px-40 lg:py-24 p-6 text-center">
               <div class="avatar">
                 <div class="w-24 border border-4 rounded-full">
                   <img src="./images/client1.png" class="w-full" />
@@ -375,18 +395,20 @@
               </div>
             </div>
             <div
-              class="absolute left-9 right-9 top-1/2 flex -translate-y-1/2 transform justify-between"
+              class="absolute lg:left-9 left-3 lg:right-9 right-3 top-1/2 flex -translate-y-1/2 transform justify-between"
             >
               <a href="#slide4" class="text-white">❮</a>
               <a href="#slide2" class="text-white">❯</a>
             </div>
           </div>
           <!-- slide 2 -->
-          <div
-            id="slide2"
-            class="tomi rounded-lg carousel-item relative w-full"
-          >
-            <div class="px-40 py-24 text-center">
+          <div id="slide2" class="rounded-lg carousel-item  w-full bg-gradient-to-b from-[#111111b4] to-[#111111] relative lg:h-full h-[550px]">
+            <img
+              class="absolute w-full h-full mix-blend-overlay"
+              src="./images/banner.png"
+              alt=""
+            />
+            <div class="lg:px-40 lg:py-24 p-6 text-center">
               <div class="avatar">
                 <div class="w-24 border border-4 rounded-full">
                   <img src="./images/client2.png" class="w-full" />
@@ -412,18 +434,20 @@
               </div>
             </div>
             <div
-              class="absolute left-9 right-9 top-1/2 flex -translate-y-1/2 transform justify-between"
+              class="absolute lg:left-9 left-3 lg:right-9 right-3 top-1/2 flex -translate-y-1/2 transform justify-between"
             >
               <a href="#slide1" class="text-white">❮</a>
               <a href="#slide3" class="text-white">❯</a>
             </div>
           </div>
           <!-- slide 3 -->
-          <div
-            id="slide3"
-            class="tomi rounded-lg carousel-item relative w-full"
-          >
-            <div class="px-40 py-24 text-center">
+          <div id="slide3" class="rounded-lg carousel-item relative w-full bg-gradient-to-b from-[#111111b4] to-[#111111] lg:h-full h-[550px]">
+            <img
+              class="absolute w-full h-full mix-blend-overlay"
+              src="./images/banner.png"
+              alt=""
+            />
+            <div class="lg:px-40 lg:py-24 p-6 text-center">
               <div class="avatar">
                 <div class="w-24 border border-4 rounded-full">
                   <img src="./images/client3.png" class="w-full" />
@@ -449,18 +473,20 @@
               </div>
             </div>
             <div
-              class="absolute left-9 right-9 top-1/2 flex -translate-y-1/2 transform justify-between"
+              class="absolute lg:left-9 left-3 lg:right-9 right-3 top-1/2 flex -translate-y-1/2 transform justify-between"
             >
               <a href="#slide2" class="text-white">❮</a>
               <a href="#slide4" class="text-white">❯</a>
             </div>
           </div>
           <!-- slide 4 -->
-          <div
-            id="slide4"
-            class="tomi rounded-lg carousel-item relative w-full"
-          >
-            <div class="px-40 py-24 text-center">
+          <div id="slide4" class="rounded-lg carousel-item relative w-full bg-gradient-to-b from-[#111111b4] to-[#111111] lg:h-full h-[550px]">
+            <img
+              class="absolute w-full h-full mix-blend-overlay"
+              src="./images/banner.png"
+              alt=""
+            />
+            <div class="lg:px-40 lg:py-24 p-6 text-center">
               <div class="avatar">
                 <div class="w-24 border border-4 rounded-full">
                   <img src="./images/client3.png" class="w-full" />
@@ -486,7 +512,7 @@
               </div>
             </div>
             <div
-              class="absolute left-9 right-9 top-1/2 flex -translate-y-1/2 transform justify-between"
+              class="absolute lg:left-9 left-3 lg:right-9 right-3 top-1/2 flex -translate-y-1/2 transform justify-between"
             >
               <a href="#slide3" class="text-white">❮</a>
               <a href="#slide1" class="text-white">❯</a>
@@ -495,7 +521,7 @@
         </div>
       </section>
       <!-- Q & A section -->
-      <section class="lg:container mx-auto mt-28">
+      <section class="lg:container mx-auto lg:mt-28 mt-16 max-w-sm">
         <div class="text-center max-w-2xl mx-auto space-y-4">
           <h3 class="font-eb-garamond text-4xl font-extrabold text-[#414040]">
             Frequently Asked Any Questions
@@ -584,7 +610,7 @@
         </div>
       </section>
       <!-- contact section -->
-      <section class="lg:container mx-auto mt-28">
+      <section class="lg:container mx-auto lg:mt-28 mt-16 max-w-sm">
         <div class="text-center max-w-2xl mx-auto space-y-4">
           <h3 class="font-eb-garamond text-4xl font-extrabold text-[#414040]">
             Contact With Us
@@ -595,9 +621,9 @@
           </p>
         </div>
         <!-- contact container -->
-        <div class="grid grid-cols-2 gap-8 mt-16">
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:mt-16 mt-6">
           <!-- contact way -->
-          <div class="grid grid-cols-2">
+          <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-3">
             <!-- contact 1 -->
             <div
               class="card bg-[#F3F3F3] border-r-2 border-b-2 rounded-none px-10 pt-16"
@@ -669,7 +695,7 @@
             </div>
           </div>
           <!-- form container -->
-          <div class="space-y-7">
+          <div class="space-y-7 lg:border-none border border-spacing-1 lg:rounded-none rounded-lg p-5 lg:p-0">
             <input
               type="text"
               placeholder="Your Name"
@@ -699,7 +725,7 @@
       </section>
     </main>
     <!-- footer section -->
-    <footer class="footer bg-black text-base-content py-28 px-52 mt-28 gap-24">
+    <footer class="footer bg-black text-base-content lg:py-28 lg:px-52 p-10 lg:mt-28 mt-16 lg:gap-24">
       <nav>
         <img class="w-36 mb-4" src="./images/logo.png" alt="" />
         <p class="text-[#CFCFCF]">
@@ -708,7 +734,7 @@
         </p>
       </nav>
       <nav>
-        <h6 class="footer-title text-white text-xl font-eb-garamond mb-7">
+        <h6 class="footer-title text-white text-xl font-eb-garamond lg:mb-7 mb-3">
           Usefull Link
         </h6>
         <ul class="text-[#CFCFCF] space-y-3">
@@ -720,10 +746,10 @@
         </ul>
       </nav>
       <nav>
-        <h6 class="footer-title text-white text-xl font-eb-garamond mb-7">
-          Legal
+        <h6 class="footer-title text-white text-xl font-eb-garamond lg:mb-7 mb-3">
+          Contact Now
         </h6>
-        <div class="space-y-4">
+        <div class="lg:space-y-4 space-y-3">
           <p class="text-[#CFCFCF]">
             555 4th 5t NW, Washington <br />
             DC 20530, United States
@@ -739,11 +765,12 @@
         </div>
       </nav>
       <form>
-        <h6 class="footer-title text-white text-xl font-eb-garamond mb-7">
+        <h6 class="footer-title text-white text-xl font-eb-garamond lg:mb-7 mb-3">
           Subscribe
         </h6>
         <p class="text-[#CFCFCF] mb-4">
-          Subscribe for our latest & Articles. <br> We Won’t Give You Spam Mails
+          Subscribe for our latest & Articles. <br />
+          We Won’t Give You Spam Mails
         </p>
         <div class="relative">
           <input
